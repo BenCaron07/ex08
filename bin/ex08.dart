@@ -7,7 +7,7 @@ void main () {
   print("Exercice 8.1");
   print('');
   // Section 1
-  print('Create a list of members sorted by');
+  print('Section 1: Create a list of members sorted by');
   print('');
   var associations = [
     {'name': 'IS', 'description': 'Information Systems'},
@@ -26,7 +26,7 @@ void main () {
   print("");
   
   // Section 2
-  print('Section 2: Obtain members whose last name begin with a given letter (N in this case)  ');
+  print('Section 2: Obtain members whose last name begins with a given letter (N in this case)  ');
   print('');
   var letter = 'N';
   byletter(members,letter);

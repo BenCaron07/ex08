@@ -2,6 +2,7 @@ part of ex08;
 
 
 //Exercise 8.1 
+//Section 1
 //Sort by last name
 
 sortbylastname(var members) {
@@ -52,6 +53,7 @@ sortbyfirstname(var members) {
   print(members);
 }
 
+//Section 2
 //Sort by a given letter
 
 byletter (members, aletter){
