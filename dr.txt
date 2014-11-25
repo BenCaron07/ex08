@@ -1,5 +1,48 @@
 ex08
 
+13/20
+
+8.1
+
+sortByLastname(List members) {
+-->
+sortByLastName(List members) {
+
+-1
+formatage
+    while (r >= 1 && lastName[r-1].compareTo(a) > 0){
+  lastName[r] = lastName [r - 1];
+  members[r] = members[r - 1];
+  r = r - 1;
+  }
+
+print ne doit être utilisé dans une bibliothèque, que dans main
+print(members);
+
+-1
+  var associations = [
+    {'name': 'IS', 'description': 'Information Systems'},
+    {'name': 'CS', 'description': 'Computer Science'},];
+  var members = [
+    {'associationName': 'IS', 'firstName': 'Dzenan', 'lastName': 'Ridjanovic', 'email': 'dr@gmail.com'},
+    {'associationName': 'CS', 'firstName': 'David', 'lastName': 'Curtis', 'email': 'dc@gmail.com'},
+    {'associationName': 'IS', 'firstName': 'Robert', 'lastName': 'Nelson', 'email': 'rn@gmail.com'}];
+-->
+associations = [
+  {“name”: “IS”, “description”: “Information Systems”, “members”: 
+   [{“firstName”: “Dzenan”, “lastName”: “Ridjanovic”, “email”: “dr@gmail.com”},
+    {“firstName”: “Robert”, “lastName”: “Nelson”, “email”: “rn@gmail.com”}]},
+  {“name”: “CS”, “description”: “Computer Science”,  “members”: 
+   [{“firstName”: “David”, “lastName”: “Curtis”, “email”: “dc@gmail.com”}]}
+]
+
+-5
+8.2
+Create a CLASS MODEL (classes avec relations) with associations and members...
+voir https://github.com/dzenanr/association
+
+---
+
 10/20
 
 -1
