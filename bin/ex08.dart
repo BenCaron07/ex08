@@ -50,6 +50,6 @@ assert(Member('Dzenan', 'Ridjanovic', members2));
 removeMember('Dzenan', 'Ridjanovic', members2);
 
 assert(Member('Antoine', 'Curtis', members2));
-updateMember('AS', 'Antoine', 'Curtis' , 'Antoine_Curtis@hotmail.com' , members2);  
+updateMember('WM', 'Antoine', 'Curtis' , 'Antoine_Curtis@hotmail.com' , members2); //WM stands for web master.
 
 }
