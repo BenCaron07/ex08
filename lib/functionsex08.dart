@@ -1,11 +1,11 @@
-part of ex08;
-
+library ex08;
 
 //Exercise 8.1 
 //Section 1
 //Sort by last name
 
-sortbylastname(var members) {
+
+sortByLastname(List members) {
   List lastName = new List();
   for (var i = 0; i < members.length; i++) {
     lastName.add(members[i]['lastName']);
@@ -30,7 +30,7 @@ sortbylastname(var members) {
 
 //Sort by first name
 
-sortbyfirstname(var members) {
+sortByFirstname(List members) { 
   List firstName = new List();
   for (var i = 0; i < members.length; i++) {
     firstName.add(members[i]['firstName']);
@@ -53,60 +53,59 @@ sortbyfirstname(var members) {
   print(members);
 }
 
+
 //Section 2
 //Sort by a given letter
 
-byletter (members, aletter){
+byLetter (List members, String aLetter){ 
   List letter = new List();
   for (var i = 0; i < members.length; i++){
     Map sortbyletter = members[i];
     var lastName = sortbyletter["lastName"];
-    if(lastName.startsWith(aletter)) {
+    if(lastName.startsWith(aLetter)) {
       letter.add(sortbyletter);
           }
   }
   print(letter);
 }
 
+
 //Exercise 8.2
 
 printM(var m){
-  for(var a in m){
-    print(a);}
+for(var a in m){
+  print(a);}
 }
 
 addMember(var associateName, var firstName, var lastName, var email, var listM){
-  listM.add({
-    'associateName': associateName,
-    'firstName': firstName,
-    'lastName': lastName,
-    'email': email});
-  print('Add a member : $firstName $lastName'); printM(listM); print('');
+listM.add({
+  'associateName': associateName,
+  'firstName': firstName,
+  'lastName': lastName,
+  'email': email});
+print('Add a member : $firstName $lastName'); printM(listM); print('');
 }
 
 removeMember(var firstName, var lastName, var listM){
-  for(var i = 0; i < listM.length; i++){
-    if(listM[i]['firstName'] == firstName && listM[i]['lastName'] == lastName){
-      listM.removeAt(i);}}
-  print('Remove a member : $firstName $lastName'); printM(listM); print('');
+for(var i = 0; i < listM.length; i++){
+  if(listM[i]['firstName'] == firstName && listM[i]['lastName'] == lastName){
+    listM.removeAt(i);}}
+print('Remove a member : $firstName $lastName'); printM(listM); print('');
 }
 
 updateMember(var associateName, var firstName, var lastName, var email, var listM){
-  for(var i = 0; i < listM.length; i++){
-    if(listM[i]['firstName'] == firstName && listM[i]['lastName'] == lastName){
-      listM[i]['associationName'] = associateName;
-      listM[i]['firstName'] = firstName;
-      listM[i]['lastName'] = lastName;
-      listM[i]['email'] = email; }}
-  print('Update member : $firstName $lastName'); printM(listM); print('');
+for(var i = 0; i < listM.length; i++){
+  if(listM[i]['firstName'] == firstName && listM[i]['lastName'] == lastName){
+    listM[i]['associationName'] = associateName;
+    listM[i]['firstName'] = firstName;
+    listM[i]['lastName'] = lastName;
+    listM[i]['email'] = email; }}
+print('Update member : $firstName $lastName'); printM(listM); print('');
 }
 
 Member(var firstName, var lastName, var listM){
-  for(var i in listM){
-    if(i['firstName'] == firstName && i['lastName'] == lastName)
-      return true;}
-  return false;
+for(var i in listM){
+  if(i['firstName'] == firstName && i['lastName'] == lastName)
+    return true;}
+return false;
 }
-
-
-
